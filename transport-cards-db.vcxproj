@@ -22,7 +22,8 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{769fbc23-b535-4618-9b3e-219acba5308a}</ProjectGuid>
-    <RootNamespace>TransportCard</RootNamespace>
+    <RootNamespace>transport-cards-db</RootNamespace>
+    <TargetName>transport-cards-db</TargetName>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

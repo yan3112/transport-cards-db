@@ -105,7 +105,7 @@ void availableCards(Card cards[], int cardCnt){
 	}
 
 	cout << " " << string(105, '-') << endl;
-	cout << "  |" << "  |      Номер      |      Tип    |              ФИО               |           | Остаток | Количество |" << endl;
+	cout << "  |" << "  |      Номер      |      Тип    |              ФИО               |           | Остаток | Количество |" << endl;
 	cout << "  |" << "  |      карты      |     карты   |           владельца            |  Баланс   |   дней  |  поездок   |" << endl;
 	cout << " " << string(105, '-') << endl;
 	for (int i = 0; i < cardCnt; i++)
@@ -351,12 +351,12 @@ void saveIntoFile(Card cards[], int cardCnt) {
 
 void loadFromFile(Card cards[], int& cardCnt) {
 	string fileName;
-	cout << "Введите имя файлв для выгрузки массива: ";
+	cout << "Введите имя файла для загрузки массива: ";
 	cin >> fileName;
 
 	ifstream fin(fileName);
 	if (fin.fail()) {
-		cout << "Не удалось открыть файл" << fileName << "\n";
+		cout << "Не удалось открыть файл " << fileName << "\n";
 		return;
 	}
 
@@ -364,7 +364,7 @@ void loadFromFile(Card cards[], int& cardCnt) {
 	fin >> n;
 
 	if (n <= 0 || n > MAX_CARD) {
-		cout << "Некоректное количество карт " << n << "\n";
+		cout << "Некорректное количество карт " << n << "\n";
 		return;
 	}
 
@@ -404,8 +404,8 @@ int main()
 		cout << "5. Узнать баланс\n";
 		cout << "6. Поиск карты по номеру\n";
 		cout << "7. Поиск всех карт, конкретного человека\n";
-		cout << "8. Загрузить в файл\n";
-		cout << "9. Выгрузить из файла\n";
+		cout << "8. Сохранить в файл\n";
+		cout << "9. Загрузить из файла\n";
 		cout << "10. Выйти\n";
 		cout << "Выберите действие: ";
 		cin >> choice;

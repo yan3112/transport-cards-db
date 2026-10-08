@@ -52,12 +52,12 @@
 
 Нужны Windows и Visual Studio 2022 с рабочей нагрузкой «Разработка классических приложений на C++».
 
-В Visual Studio: откройте `TransportCard.sln`, соберите `Release | x64`, запустите.
+В Visual Studio: откройте `transport-cards-db.sln`, соберите `Release | x64`, запустите.
 
 Через MSBuild:
 
 ```powershell
-msbuild TransportCard.sln /p:Configuration=Release /p:Platform=x64
+msbuild transport-cards-db.sln /p:Configuration=Release /p:Platform=x64
 ```
 
 Через CMake:
@@ -67,8 +67,12 @@ cmake -B build -A x64
 cmake --build build --config Release
 ```
 
-Запустите `transport-cards-db.exe`, выберите пункт 9 и укажите файл `data/cards.txt`, чтобы
-загрузить пример базы.
+После сборки запустите `transport-cards-db.exe`:
+
+- Visual Studio / MSBuild — `x64\Release\`;
+- CMake — `build\Release\`.
+
+Выберите пункт 9 и укажите файл `data/cards.txt`, чтобы загрузить пример базы.
 
 ## Как устроено
 
